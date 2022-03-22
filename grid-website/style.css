@@ -143,3 +143,44 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+.info div p, h2 {
+    margin-bottom: 2rem
+}
+.info a:hover {
+    background: rgb(36, 35, 35);
+    color: var(--light);
+    transition: .5s ease-in-out;
+}
+
+/*media screen*/
+
+@media(max-width: 700px) {
+    .top-container{
+        grid-template-areas:
+        "showcase showcase"
+        "top-box-a top-box-b";
+    }
+    .showcase h1{
+        font-size: 2.5rem;
+    }
+    .main-nav ul{
+        grid-template-columns: 1fr;
+    }
+    .info {
+        grid-template-columns: 1fr;
+    }
+    .info .btn{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+}
+@media(max-width: 500px) {
+    .top-container{
+        grid-template-areas:
+        "showcase"
+        "top-box-a"
+        "top-box-b";
+    }
+}
